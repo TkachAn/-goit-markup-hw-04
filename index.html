@@ -6,43 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta aria-describedby="">  -->
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
+
   </head>
 <!-- body -->
   <body>
   <!-- header -->
-    <header class="container">
+    <header>
+      <div class="container">
       <a href="./index.html"><span class="web">Web</span><span class="studio up">Studio</span></a>
       <!-- navigation -->
-      <nav> <!-- class="" -->
-          <ul class="navigation">
-            <li>
-              <a href="./index.html">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html">Портфолио</a>
-            </li>
-            <li>
-              <a href="./contakts.html">Контакты</a>
-            </li>
-          </ul>
+      <nav>
+        <!-- class="" -->
+        <ul class="navigation">
+    
+          <li>
+            <a href="./index.html">Студия</a>
+          </li>
+    
+          <li>
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+    
+          <li>
+            <a href="./contakts.html">Контакты</a>
+          </li>
+    
+        </ul>
+        
       </nav>
       <!-- address -->
-      <ul class="address" >
-          <li >
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
+      <ul class="address">
+    
+        <li>
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+    
+        <li>
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+    
       </ul>
+    </div>
     </header>
-  <!-- main -->
-    <main class="section">
+  <!-- main  class="section"-->
+    <main>
     <!-- hero -->
       <section class="hero">
         <h1 class="heading1">
@@ -53,12 +67,12 @@
         </button>
       </section>
     <!-- Особенности Benefits <h2>Особенности</h2>-->
-      <section class="container Benefits">
+      <section class="benefits">
         <h2 class="invisible">Особенности</h2>
-        <ul class="for-Benefits">
+        <ul class="container for-benefits">
         <!-- Внимание к деталям -->
           <li class="block">
-            <h3 class="heading3 BenH3">
+            <h3 class="heading3 benh3">
                 Внимание к деталям
             </h3>
             <p>
@@ -67,7 +81,7 @@
           </li>
         <!-- Пунктуальность -->
           <li class="block">
-            <h3 class="heading3 BenH3">
+            <h3 class="heading3 benh3">
                 Пунктуальность
             </h3>
             <p>
@@ -76,7 +90,7 @@
           </li>
         <!-- Планирование -->
           <li class="block">
-            <h3 class="heading3 BenH3">
+            <h3 class="heading3 benh3">
                 Планирование
             </h3>
             <p>
@@ -85,7 +99,7 @@
           </li>
         <!-- Современные технологии -->
           <li class="block">
-            <h3 class="heading3 BenH3">
+            <h3 class="heading3 benh3">
                 Современные технологии
             </h3>
             <p>
@@ -95,9 +109,9 @@
         </ul>
       </section>
     <!-- Чем мы занимаемся -->
-      <section class="container we-doing">
+      <section class="we-doing">
         <h2 class="heading2">Чем мы занимаемся</h2>
-        <ul class="for-doing">
+        <ul class="container for-doing">
           <li><img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370"></li>
           <li><img src="./images/1/img2.jpg" alt="рабочее место разработчика ПО 2" width="370"></li>
           <li><img src="./images/1/img3.jpg" alt="рабочее место разработчика ПО 3" width="370"></li>
@@ -111,7 +125,7 @@
           <li class="card">
             <img class="img"  src="./images/1/img_erm.jpg" alt="Михаил Ермаков" width="270" >
             <p class="Item">
-            <span class="itm-H3"><!--or teg <span> + class = "team-member-names" -->
+            <span class="itm-h3"><!--or teg <span> + class = "team-member-names" -->
               Михаил Ермаков
             </span> <br>
             
@@ -122,7 +136,7 @@
           <li class="card">
             <img class="img" src="./images/1/img_tar.jpg" alt="Николай Тарасов" width="270">
             <p class="Item">
-              <span class="itm-H3"><!--or teg <span> + class = "team-member-names"-->
+              <span class="itm-h3"><!--or teg <span> + class = "team-member-names"-->
               Николай Тарасов
               </span> <br>
             
@@ -133,7 +147,7 @@
           <li class="card">
             <img class="img"  src="./images/1/img_rep.jpg" alt="Ольга Репина" width="270">
             <p class="Item">
-              <span class="heading3 itm-H3"><!--or teg <span> + class = "team-member-names"-->
+              <span class="heading3 itm-h3"><!--or teg <span> + class = "team-member-names"-->
               Ольга Репина
             </span> <br>
             
@@ -144,7 +158,7 @@
           <li class="card">
             <img class="img"  src="./images/1/img_dem.jpg" alt="Игорь Демьяненко" width="270">
             <p class="Item">
-            <span class="itm-H3"><!--or teg <span> + class = "team-member-names"-->
+            <span class="itm-h3"><!--or teg <span> + class = "team-member-names"-->
               Игорь Демьяненко
             </span>
             <br>
