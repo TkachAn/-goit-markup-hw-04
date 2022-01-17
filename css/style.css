@@ -76,21 +76,6 @@ a {
   color: var(--secondary-link-color, #212121);
 }
 
-/*задаём параметры ссылок 
-при наведении или фокусе*/
-a:hover,
-a:focus,
-.smartphone:hover,
-.envelope:hover,
-.smartphone:focus,
-.envelope:focus,
-.address a:hover,
-.address a:focus {
-  color: var(--primary-accent-color, #2196f3);
-  stroke: var(--primary-accent-color, #2196f3);
-  font-weight: 600;
-}
-
 /* задаём параметры шрифтов заголовков */
 
 /* .heading2, */
@@ -213,16 +198,34 @@ header a {
 }
 
 /*******address************************/
-.envelope {
-  /* viewBox="0 0 43 32"; */
-  width: 22px;
-  height: 16px;
-  fill: var(--primary-txt-color, #757575);
+/*задаём параметры ссылок 
+при наведении или фокусе*/
+
+.address a:hover,
+.address a:focus,
+a:hover,
+a:focus {
+  color: var(--primary-accent-color, #2196f3);
+  stroke: var(--primary-accent-color, #2196f3);
+  fill: var(--primary-accent-color, #2196f3);
+  font-weight: 500;
 }
-.smartphone {
-  width: 10px;
+.alig {
+  /* display: block; */
+  /* align-items: baseline; */
+}
+.envelope {
+  width: 24px;
   height: 16px;
-  /* fill: var(--primary-txt-color, #757575); */
+  stroke: currentColor;
+  fill: currentColor;
+}
+/* .envelope > use {object-fit: contain;} */
+.smartphone {
+  width: 11px;
+  height: 16px;
+  stroke: currentColor;
+  fill: currentColor;
 }
 /* .smartphone:hover { stroke: var(--primary-accent-color, #2196f3);} */
 
@@ -237,7 +240,7 @@ header a {
   color: var(--primary-txt-color, #757575);
 }
 .address > li {
-  align-content: auto;
+  align-items: stretch;
 }
 .address > li + li {
   margin-left: 50px;
