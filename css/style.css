@@ -8,8 +8,15 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  background-repeat: no-repeat;
+  /* background-position: center; */
 }
-
+*::before {
+  /* background-position: right; */
+}
+*::after {
+  /* background-position: left; */
+}
 h1,
 h2,
 h3,
@@ -73,9 +80,14 @@ a {
 при наведении или фокусе*/
 a:hover,
 a:focus,
+.smartphone:hover,
+.envelope:hover,
+.smartphone:focus,
+.envelope:focus,
 .address a:hover,
 .address a:focus {
   color: var(--primary-accent-color, #2196f3);
+  stroke: var(--primary-accent-color, #2196f3);
   font-weight: 600;
 }
 
@@ -132,8 +144,7 @@ img {
 }
 
 /******background************/
-footer,
-.hero {
+footer {
   background-color: var(--primary-bg-color, #2f303a);
 }
 
@@ -146,6 +157,7 @@ footer,
 header {
   border-bottom: 1px solid var(--primary-border-color, #ececec);
 }
+
 header div {
   display: flex;
   align-items: center;
@@ -153,6 +165,7 @@ header div {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 header a {
   /* display: block; */
   padding-top: 24px;
@@ -200,6 +213,18 @@ header a {
 }
 
 /*******address************************/
+.envelope {
+  /* viewBox="0 0 43 32"; */
+  width: 22px;
+  height: 16px;
+  fill: var(--primary-txt-color, #757575);
+}
+.smartphone {
+  width: 10px;
+  height: 16px;
+  /* fill: var(--primary-txt-color, #757575); */
+}
+/* .smartphone:hover { stroke: var(--primary-accent-color, #2196f3);} */
 
 /*параметры контейнера адрес для шапки*/
 .address {
@@ -211,7 +236,9 @@ header a {
   /* display: block; */
   color: var(--primary-txt-color, #757575);
 }
-
+.address > li {
+  align-content: auto;
+}
 .address > li + li {
   margin-left: 50px;
 }
@@ -223,8 +250,14 @@ header a {
 /**********HIRO***************/
 
 .hero {
+  background: #c4c4c4;
+  /* background-image: url(../images/1/Img\ Overlay.png), url(../images/1/Img.jpg); */
+  background-image: linear-gradient(to left, #2f303a66, #2f303a66),
+    url(../images/1/Img.jpg);
+  /* background-repeat: no-repeat; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   text-align: center;
-  /* padding: 200px; */
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -277,6 +310,22 @@ header a {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+/* Внимание к деталям */
+.size {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  /* width: 270px; */
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 0;
+}
 
 /*********чем мы занимаемся*******/
 
@@ -317,6 +366,7 @@ header a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .Item {
@@ -326,7 +376,7 @@ header a {
 }
 
 .card > p {
-  padding: 30px 24px;
+  padding: 30px 24px 16px;
   font-size: 16px;
 
   line-height: 0.9;
@@ -338,6 +388,74 @@ header a {
 
   font-weight: 500;
 }
+.card-futer {
+  width: 270px;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 0 32px 30px;
+}
+.Social {
+  display: flex;
+  justify-content: space-between;
+  width: 208px;
+  height: 44px;
+  /* background-color: #c4c4c4; */
+}
+.linkedin,
+.twitter,
+.facebook,
+.instagram {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  /* style: "fill: var(--color5, ##AFB1B8)"; */
+}
+a:hover,
+a:focus {
+  stroke: transparent;
+}
+.instagram:hover {
+  fill: #ffffff;
+  background-color: var(--primary-accent-color);
+  border-radius: 50% 50%;
+}
+.facebook:hover {
+  fill: #ffffff;
+  background-color: var(--primary-accent-color);
+  border-radius: 50% 50%;
+}
+.twitter:hover {
+  fill: #ffffff;
+  background-color: var(--primary-accent-color);
+  border-radius: 50% 50%;
+}
+.linkedin:hover {
+  fill: #ffffff;
+  background-color: var(--primary-accent-color);
+  border-radius: 50% 50%;
+}
+/****************************************/
+.clients {
+  text-align: center;
+}
+.clients ul {
+  display: flex;
+  justify-content: space-between;
+}
+.group-cl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: #ffffff;
+  border: 2px solid var(--primary-border-color, #ececec);
+  border-radius: 4px;
+}
+.clients .size {
+  /*  */
+  height: 32px;
+}
 
 /*********************************/
 /*************FOOTER**************/
@@ -347,7 +465,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.for-footer {
+  display: flex;
+}
 address {
   margin-top: 20px;
 
