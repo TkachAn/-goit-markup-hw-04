@@ -215,8 +215,8 @@ a:focus {
   /* align-items: baseline; */
 }
 .envelope {
-  width: 24px;
-  height: 16px;
+  width: 21px;
+  height: 14px;
   stroke: currentColor;
   fill: currentColor;
 }
@@ -370,6 +370,7 @@ a:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .Item {
@@ -397,7 +398,8 @@ a:hover {
 }
 .card-futer {
   width: 270px;
-  padding: 0 32px 30px;
+  height: 44px;
+  padding: 0 32px;
 }
 .social {
   display: flex;
@@ -414,10 +416,11 @@ a:hover {
   color: var(--color2, #afb1b8);
   background-color: ffffff;
   width: 44px;
-  height: 44px;
+  /* height: 44px; */
   border-radius: 50% 50%;
 }
 .icon-social {
+  height: 44px;
   fill: currentColor;
 }
 .social-link:focus,
@@ -446,7 +449,7 @@ a:hover {
 }
 .group-cl > .icon {
   fill: currentColor;
-  height: 32px;
+  height: 40px;
 }
 .group-cl:focus,
 .group-cl:hover {
